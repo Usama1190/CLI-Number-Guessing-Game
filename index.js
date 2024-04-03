@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from 'inquirer';
 const mechineRandom = Math.floor(Math.random() * 11);
 const mechineNumber = mechineRandom;
