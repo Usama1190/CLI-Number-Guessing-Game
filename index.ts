@@ -4,8 +4,6 @@ import inquirer from 'inquirer';
 
 const mechineRandom = Math.floor(Math.random() * 11);
 
-const mechineNumber = mechineRandom;
-
 const userGuessNumber = await inquirer.prompt([
     {
         name: 'guessNumber',
@@ -14,7 +12,7 @@ const userGuessNumber = await inquirer.prompt([
     },
 ]);
 
-if(userGuessNumber.guessNumber === mechineNumber) {
+if(userGuessNumber.guessNumber === mechineRandom) {
     console.log('You guessed right number');
 }
 else {
