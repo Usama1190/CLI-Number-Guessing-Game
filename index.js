@@ -1,7 +1,6 @@
 #! /usr/bin/env node
 import inquirer from 'inquirer';
 const mechineRandom = Math.floor(Math.random() * 11);
-const mechineNumber = mechineRandom;
 const userGuessNumber = await inquirer.prompt([
     {
         name: 'guessNumber',
@@ -9,7 +8,7 @@ const userGuessNumber = await inquirer.prompt([
         message: 'Please guess number b/w 1 to 10'
     },
 ]);
-if (userGuessNumber.guessNumber === mechineNumber) {
+if (userGuessNumber.guessNumber === mechineRandom) {
     console.log('You guessed right number');
 }
 else {
